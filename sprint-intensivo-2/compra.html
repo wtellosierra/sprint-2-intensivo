@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="central-buy">
+            <div id="login">
+                <form>
+                    
+                    <fieldset>
+                            <legend><h1>Formulario de compra</h1></legend> 
+                            <label><strong>Datos de envio:</strong></label><br>  
+                            <br> 
+                            <label>Seleccione si el paquete será recibido por el cliente o por otra persona</label><br>
+                            <input type="radio" id="Cliente" name="recibe"> Cliente <br>
+                            <input type="radio" id="Otra persona" name="recibe"> Otra persona 
+                            <br>
+                            <label>Si los datos de envio son diferentes a los registrados por el cliente, 
+                                por favor diligenciar los siguientes campos:</label><br>
+                            <table>
+                                <tr><td><label>Nombre</label></td><td><input type="text" id="nombre" name="nombre" placeholder="Nombre"><br></td></tr>                
+                                <tr><td> <label>Apellidos</label></td><td><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"><br></td></tr>
+                                <tr><td><label>Celular</label></td><td><input type="text" id="celular" name="celular" placeholder="Celular"></td></tr>
+                                <tr><td><label>Dirección</label></td><td><input type="text" id="direccion" name="direccion" placeholder="Direccion"></td></tr>
+                                <tr><td><label>Barrio</label></td><td><input type="text" id="barrio" name="barrio" placeholder="Barrio"></td></tr>
+                                <tr><td><label>Ciudad</label></td><td><input type="text" id="ciudad" name="ciudad" placeholder="Ciudad"></td></tr>
+                                <tr><td><label>Correo</label></td><td> <input type="email" id="correo" name="correo" placeholder="usuario@gmail.com"><br></td></tr>    
+                                <br>
+                            </table>
+                            <br>
+                            <label><strong>Seleccione el metodo de Pago:</strong></label><br>
+                            <br>
+                            <input type="radio" id="pse" name="pse"> PSE <br>
+                                <label>Selecciona su banco</label>
+                                <input list="bancos" name="misbancos">
+                                    <datalist id="bancos">
+                                        <option value="Nequi">
+                                        <option value="Bancolombia">
+                                        <option value="Grupo Aval">
+                                        <option value="Itau"></option>
+                                        <option value="Davivienda"></option>
+                                    </datalist>
+                                    <br>
+                            <br>
+                            <input type="radio" id="pse" name="pse"> Tarjeta Debito <br>
+                                    <table>
+                                        <tr><td> <label>Numero de tarjeta</label></td><td><input type="texto" id="tarjetanumero" name="tarjetanumero" placeholder="xxxx xxxx xxxx"><br></td></tr>
+                                        <tr><td><label>CCV</label></td><td><input type="password" id="ccv" placeholder="xxx"><br></td></tr> 
+                                    </table>
+                            <br>
+                            <input type="radio" id="pse" name="pse"> Tarjeta credito <br>
+                            <table>
+                                <tr><td> <label>Numero de tarjeta</label></td><td><input type="texto" id="tarjetanumero" name="tarjetanumero" placeholder="xxxx xxxx xxxx"><br></td></tr>
+                                <label>Fecha vencimiento</label><input type="date" id="fechanac"><br>
+                                <tr><td><label>CCV</label></td><td><input type="password" id="ccv" placeholder="xxx"><br></td></tr> 
+                            </table>
+                            <br>
+                            <br>
+                            <input type="button" value="Pagar">
+                            <input type="reset" value="Cancelar"><br>
+                            <br>
+                            <br>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
